@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arush AI Web</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">AV Web Studio</div>
+
+    <ul>
+      <li onclick="showSection('home')">HOME</li>
+      <li onclick="showSection('about')">ABOUT</li>
+      <li onclick="showSection('projects')">PROJECTS</li>
+      <li onclick="showSection('contact')">CONTACT</li>
+    </ul>
+
+  </nav>
+
+
+
+  <!-- HOME -->
+
+  <section id="home" class="section active">
+
+    <div class="hero">
+
+      <h1>Where AI Meets the World</h1>
+
+      <p id="typing"></p>
+
+      <button onclick="openHub()">Explore</button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- HUB -->
+
+  <section id="hub" class="section">
+
+    <div class="hub-container">
+
+      <h1 class="loading-text">
+        Loading..........
+        <br>
+        Please wait a while
+      </h1>
+
+
+
+      <div class="hub-links">
+
+        <div class="hub-card green-card"
+        onclick="showSection('about')">
+
+          ABOUT
+
+        </div>
+
+
+
+        <div class="hub-card purple-card"
+        onclick="showSection('projects')">
+
+          PROJECTS
+
+        </div>
+
+
+
+        <div class="hub-card orange-card"
+        onclick="showSection('contact')">
+
+          CONTACT
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ABOUT -->
+
+  <section id="about" class="section">
+
+    <div class="cinematic">
+
+      <h2 class="green">ABOUT ME</h2>
+
+      <div class="content">
+
+        <img src="yt-logo-av.jpg.jpg" alt="its Arush" height="300">
+
+        <p>
+          Yoo hello guys, it's me Arush and you're most welcome to my AI WEB.
+        </p>
+
+        <p>
+          I am a YouTuber,  as some of you already may know me 😎🔥
+          <br>
+          I'm the Founder of this web browser
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- PROJECTS -->
+
+  <section id="projects" class="section">
+
+    <div class="cinematic">
+
+      <h2 class="purple">PROJECTS</h2>
+
+      <div class="content">
+
+        <p>
+          The futuristic AI and web development projects will be avalable soon here 🚀
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="section">
+
+    <div class="cinematic">
+
+      <h2 class="orange">CONTACT</h2>
+
+      <div class="content">
+
+        <p>
+          More section coming soon 😎🔥
+        </p>
+        <br>
+        <br>
+        <p>Contact me - </p>
+        <br>
+        <p>MY YT CHANNEL 
+        <a href="https://www.youtube.com/channel/UCM5zsu0mDBWbQqm10hgRpSw" target="_blank">
+        <img class="yt-logo" src="youtube logo.png" alt=" Youtube ">
+        </a> </p>
+        <p>Join My Discord Server <a href="https://discord.gg/3x7hfj7QeG" target="_blank"> 
+          <img class="social-icon" src="Discord.png" alt="Discord"></a>
+        </p>
+        <br>
+        <p>email- arushlegend77av@outlook.com</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Thanks for coming to the website,meet you later! :) </p>
+
+        <div class="clock">
+
+         <div class="center"></div>
+
+         <div class="hand hour" id="hour"></div>
+        <div class="hand minute" id="minute"></div>
+        <div class="hand second" id="second"></div>
+
+       </div>
+
+      </div>
+
+    </div>
+
+    
+
+
+  </section>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
