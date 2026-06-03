@@ -7,7 +7,7 @@
 
 body{
   background:black;
-  overflow:hidden;
+  overflow-x:hidden;
   color:white;
 }
 
@@ -447,13 +447,14 @@ button:hover{
 .cinematic{
 
   width:100%;
-  height:100vh;
+  height:100%;
 
   overflow-y:auto;
 
   text-align:center;
 
   padding-top:180px;
+  padding-bottom:150px;
 }
 
 .cinematic::-webkit-scrollbar{
@@ -615,6 +616,7 @@ body {
   margin-top:80px;
 
   padding:40px;
+  padding-bottom:250px;
 
   max-width:800px;
 
@@ -636,7 +638,8 @@ body {
 .contact-layout{
   display:flex;
   justify-content:space-between;
-  align-items:center;
+  align-items:flex-start;
+  gap:50px;
 }
 
 .clock{
@@ -648,8 +651,7 @@ body {
 
   position:relative; /* NOT fixed or absolute */
 
-  margin-top:50px;
-  margin-left:auto;
+  margin:80px auto 0 auto;
 
   background:transparent;
 
@@ -698,4 +700,116 @@ body {
   width:2px;
   height:45%;
   background:cyan;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+
+@media (max-width:768px){
+
+  /* Disable custom cursor on phones */
+  body{
+    cursor:auto;
+    overflow-x:hidden;
+  }
+
+  .cursor,
+  .cursor-ring{
+    display:none !important;
+  }
+
+  /* Navbar */
+  nav{
+    width:95%;
+    padding:15px;
+  }
+
+  .logo{
+    font-size:18px;
+  }
+
+  ul{
+    gap:12px;
+    flex-wrap:wrap;
+  }
+
+  li{
+    font-size:14px;
+  }
+
+  /* Home */
+  h1{
+    font-size:48px;
+    line-height:1.1;
+  }
+
+  p{
+    font-size:18px;
+  }
+
+  .hero{
+    width:95%;
+    padding:25px;
+  }
+
+  button{
+    font-size:16px;
+    padding:12px 25px;
+  }
+
+  /* Section Titles */
+  .cinematic h2{
+    font-size:34px;
+    padding:15px 25px;
+  }
+
+  /* Content */
+  .content{
+    width:95%;
+    padding:20px;
+    margin-top:100px;
+  }
+
+  /* Explore Page */
+  .hub-container{
+    width:95%;
+    padding:25px;
+  }
+
+  .hub-links{
+    width:100%;
+    padding:20px;
+  }
+
+  .hub-card{
+    width:100%;
+    max-width:260px;
+    height:80px;
+    font-size:22px;
+  }
+
+  .loading-text{
+    font-size:28px;
+  }
+
+  /* Contact */
+  .contact-layout{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .clock{
+    width:120px;
+    height:120px;
+    margin:auto;
+  }
+
+  /* Background glow smaller */
+  body::before{
+    width:250px;
+    height:250px;
+    filter:blur(100px);
+  }
+
 }
